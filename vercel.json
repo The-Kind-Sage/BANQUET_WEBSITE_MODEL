@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": ".vercel/output",
+  "installCommand": "npm install",
   "routes": [
     { "handle": "filesystem" },
     { "src": "^/(.*)", "dest": "/__server" }
