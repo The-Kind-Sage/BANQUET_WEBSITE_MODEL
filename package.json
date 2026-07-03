@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "npm run vercel-build",
-    "vercel-build": "npx nitro build --preset vercel",
+    "build": "vite build",
+    "vercel-build": "NITRO_PRESET=vercel vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
